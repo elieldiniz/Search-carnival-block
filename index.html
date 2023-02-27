@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
 
 <title>Encontre seu bloco no carnaval</title>
 </head>
 <body>
     <header>
         <div class="content">
+        <div class="top">
             <p>find your block</p>
-            <h1>Encontre os <span>melhores blocos</span>de carnaval de 2023 </h1>
+            <h1>Encontre os <span>melhores blocos </span> de carnaval de 2023 </h1>
         </div>
-        
-        <form class="search"></form>
+
+        <form class="search">
+            <div class="search-field se">
+                <label for="name" class="sr-only">Pesquise por nome</label>
+                <i class="ph-magnifying-glass-light"></i>
+                <input type="text" id="name" name="name" placeholder="Pesquise por nome">
+            </div>
+            <div class="search-field">
+                <label class="sr-only" for="city">Selecione uma vidade</label>
+                <i class="ph-map-pin-light"></i>
+                <select id="city" name="city">
+                    <option value="0" selected>Selecione uma vidade</option>
+                    <option value="SAO-PALULO" >Sao paulo</option>
+                    <option value="RIO-DE-JANEIRO" >Rio de janeiro</option>
+                    <option value="Salvador" >Salvador</option>
+                </select>
+                <i class="ph-caret-down-light"></i>
+            </div>
+            <button>BUSCAR AGORA</button>
+        </form>
+        </div>
     </header>
 </body>
 </html>

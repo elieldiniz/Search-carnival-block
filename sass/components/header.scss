@@ -1,20 +1,24 @@
+@import "./fonty-colors.scss";
+
+
 
 header{
     min-height: 53.2rem;
     background-color: #F8F8FF;
-    text-align: center;
 
     position: relative;
     overflow: hidden;
-    background-image: url(/assets/5452469.jpg);
-
+    display: grid;
+    place-content: center;
+    
+  
 }
 
 header::before {
         content: "";
         background-image: url(../assets/bg-top.svg);
-        width: 29.7rem;
-        height: 29.7rem;
+        width: 30.7rem;
+        height: 30.7rem;
 
         position: absolute;
         z-index: 0;
@@ -32,6 +36,37 @@ header::before {
         right: 0;
         bottom: 0.1rem;
 }
+
+header .content {
+    width: fit-content;
+    
+
+    position: relative;
+    z-index: 1;
+
+    .top{
+        text-align: center;
+    }
+    
+    
+    span{
+        color: $color;
+    }
+
+    p{
+        color: #E45858;
+    }
+
+    h1{
+        font-size: 4.8rem;
+        line-height: 125%;
+        color: #121214;
+        max-width: 64.7rem;
+        margin: auto;
+    }
+}
+
+
 
 
 
