@@ -18,12 +18,16 @@ form{
 
     input, select {
         color: #7c7c8a;
-        min-width: 29rem;
-        
+        min-width: 29rem;  
+      
+    }
+
+    select{
+        position: relative;
         
     }
 
-    button{
+    .primary{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -62,7 +66,9 @@ form{
 
     .search-field i {
         color: #E45858;
+        font-size: 2rem;
+        
     }
-      
+
 }
 

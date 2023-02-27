@@ -41,13 +41,15 @@ header .content span {
 }
 header .content p {
   color: #E45858;
+  margin-bottom: 2rem;
+  font-family: "roboto";
 }
 header .content h1 {
   font-size: 4.8rem;
   line-height: 125%;
   color: #121214;
   max-width: 64.7rem;
-  margin: auto;
+  margin: 1.8rem auto 0;
 }
 
 form {
@@ -66,7 +68,10 @@ form input, form select {
   color: #7c7c8a;
   min-width: 29rem;
 }
-form button {
+form select {
+  position: relative;
+}
+form .primary {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +101,43 @@ form .search-field {
 }
 form .search-field i {
   color: #E45858;
+  font-size: 2rem;
+}
+
+main .content {
+  max-width: 1216px;
+  margin: 10rem auto;
+}
+
+.content .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 3rem;
+  background-color: #6246EA;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 200ms;
+}
+
+.view button {
+  padding: 0.4rem 2.4rem;
+}
+
+.view button:hover {
+  background-color: #44eb11;
+  color: black;
 }
 
 * {

@@ -1,0 +1,50 @@
+
+
+
+main .content {
+    max-width: 1216px;
+    margin: 10rem auto;
+}
+.content .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem 3rem;
+    
+
+    background-color: #6246EA ;
+    border-radius: 0.5rem;
+
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+
+    text-transform: uppercase;
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: background 200ms;
+}
+
+
+.secondary{
+    
+}
+
+.view button{
+    padding: .4rem 2.4rem ;
+
+}
+
+.view button:hover{
+    background-color: #44eb11;
+    color: black;
+}
+
+
